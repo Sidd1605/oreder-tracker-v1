@@ -582,7 +582,7 @@ const getOrdersByUId = async (req, res) => {
         createdBy: { $first: "$createdBy" },
       },
     },
-  ]);
+  ]).sort({ createdAt: -1 });
 
   console.log("ordersByUId", ordersByUId);
 

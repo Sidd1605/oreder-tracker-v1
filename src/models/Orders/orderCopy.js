@@ -13,6 +13,7 @@ const orderSchema = new Schema(
     courier: String,
     callType: String,
     billingPhone: String,
+    awbNumber: String,
     createdBy: {
       type: Schema.Types.ObjectId,
       ref: "user",

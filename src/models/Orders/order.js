@@ -12,6 +12,7 @@ const orderSchema = new Schema(
     addressPINCode: String,
     courier: String,
     callType: String,
+    awbNumber:String,
     billingPhone: String,
     createdBy: {
       type: Schema.Types.ObjectId,
